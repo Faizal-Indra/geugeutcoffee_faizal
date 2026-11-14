@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stok Bahan - Geugeut Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="faizal_app-header">
+    <div class="faizal_brand-wrapper">
+      <div class="faizal_logo-box"><i class="fa-solid fa-mug-hot"></i></div>
+      <div>
+        <h1 class="faizal_brand-title">GEUGEUT COFFEE</h1>
+        <p class="faizal_brand-tagline">"Ngeunah Rasana, Geugeut Hatena."</p>
+      </div>
+    </div>
+    <nav class="faizal_nav-tabs">
+      <a href="index.html" class="faizal_nav-link"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="about.html" class="faizal_nav-link"><i class="fa-solid fa-circle-info"></i> Tentang</a>
+      <a href="order.html" class="faizal_nav-link"><i class="fa-solid fa-mobile-screen"></i> Order</a>
+      <a href="pos.html" class="faizal_nav-link"><i class="fa-solid fa-cash-register"></i> Kasir</a>
+      <a href="inventory.html" class="faizal_nav-link active"><i class="fa-solid fa-boxes-stacked"></i> Stok</a>
+      <a href="reports.html" class="faizal_nav-link"><i class="fa-solid fa-chart-line"></i> Laporan</a>
+      <a href="contact.html" class="faizal_nav-link"><i class="fa-solid fa-envelope"></i> Kontak</a>
+    </nav>
+  </header>
+
+  <main class="faizal_app-container">
+    <div class="faizal_card-panel">
+      <div class="faizal_section-header">
+        <h2><i class="fa-solid fa-boxes-stacked"></i> Manajemen Stok Bahan Baku</h2>
+        <span class="faizal_sub-label">Terhubung otomatis dengan setiap transaksi di halaman Order & Kasir</span>
+      </div>
+      <div class="faizal_table-responsive">
+        <table class="faizal_data-table">
+          <thead>
+            <tr>
+              <th>Kode</th>
+              <th>Nama Bahan Baku</th>
+              <th>Tersisa</th>
+              <th>Satuan</th>
+              <th>Batas Min.</th>
+              <th>Status</th>
+              <th style="text-align:center;">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="inventoryTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="faizal_app-footer">
+    &copy; 2026 Geugeut Coffee — "Ngeunah Rasana, Geugeut Hatena."
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
